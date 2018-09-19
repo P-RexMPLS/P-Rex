@@ -1,0 +1,3476 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/17.3R1/junos">
+    <forwarding-table-information xmlns="http://xml.juniper.net/junos/17.3R1/junos-rtinfo">
+        <route-table>
+            <table-name>default.mpls [Index 0] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>65</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>1</nh-index>
+                    <nh-reference-count>3</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>3</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>64</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>2</nh-index>
+                    <nh-reference-count>3</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>3</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>13</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>64</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>17</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>926</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>18</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 18</nh-type>
+                    <nh-index>828</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>19</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 19</nh-type>
+                    <nh-index>829</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>20</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 20</nh-type>
+                    <nh-index>830</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>21</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 21</nh-type>
+                    <nh-index>831</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>22</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 144</nh-type>
+                    <nh-index>832</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>24</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 24</nh-type>
+                    <nh-index>834</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>25</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 25</nh-type>
+                    <nh-index>835</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>26</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 27</nh-type>
+                    <nh-index>836</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>27</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 28</nh-type>
+                    <nh-index>837</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>28</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 126</nh-type>
+                    <nh-index>838</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>29</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 30</nh-type>
+                    <nh-index>839</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>30</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>840</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>30(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>841</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>31</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 127</nh-type>
+                    <nh-index>842</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>34</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 128</nh-type>
+                    <nh-index>845</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>36</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 135</nh-type>
+                    <nh-index>847</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>37</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 132</nh-type>
+                    <nh-index>848</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>38</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 129</nh-type>
+                    <nh-index>849</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>41</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 140</nh-type>
+                    <nh-index>852</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>42</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 136</nh-type>
+                    <nh-index>853</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>44</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 46</nh-type>
+                    <nh-index>855</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>45</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 141</nh-type>
+                    <nh-index>856</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>49</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 51</nh-type>
+                    <nh-index>860</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>73</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 150</nh-type>
+                    <nh-index>884</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>74</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 77</nh-type>
+                    <nh-index>885</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>80</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 83</nh-type>
+                    <nh-index>891</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>82</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 85</nh-type>
+                    <nh-index>893</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>83</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 87</nh-type>
+                    <nh-index>894</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>100</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 105</nh-type>
+                    <nh-index>911</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>101</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 106</nh-type>
+                    <nh-index>912</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>103</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 108</nh-type>
+                    <nh-index>914</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>106</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 110</nh-type>
+                    <nh-index>917</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>107</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 111</nh-type>
+                    <nh-index>918</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>108</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 113</nh-type>
+                    <nh-index>919</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>109</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 114</nh-type>
+                    <nh-index>920</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>110</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 115</nh-type>
+                    <nh-index>921</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>111</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 116</nh-type>
+                    <nh-index>922</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>112</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 117</nh-type>
+                    <nh-index>923</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>116</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 139</nh-type>
+                    <nh-index>1037</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>117</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 52</nh-type>
+                    <nh-index>1038</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>120</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 112</nh-type>
+                    <nh-index>1041</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>123</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 164</nh-type>
+                    <nh-index>763</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>124</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 166</nh-type>
+                    <nh-index>861</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>125</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 167</nh-type>
+                    <nh-index>869</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>128</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 170</nh-type>
+                    <nh-index>871</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>129</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 171</nh-type>
+                    <nh-index>867</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>131</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 173</nh-type>
+                    <nh-index>882</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>133</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 175</nh-type>
+                    <nh-index>895</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>134</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 176</nh-type>
+                    <nh-index>881</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>135</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 177</nh-type>
+                    <nh-index>875</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>136</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 178</nh-type>
+                    <nh-index>888</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>137</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 179</nh-type>
+                    <nh-index>886</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>138</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 180</nh-type>
+                    <nh-index>794</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>140</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 182</nh-type>
+                    <nh-index>904</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>141</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 183</nh-type>
+                    <nh-index>877</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>142</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 184</nh-type>
+                    <nh-index>901</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>143</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 185</nh-type>
+                    <nh-index>863</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>144</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 186</nh-type>
+                    <nh-index>906</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>145</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 187</nh-type>
+                    <nh-index>1021</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>146</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 188</nh-type>
+                    <nh-index>788</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>147</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 189</nh-type>
+                    <nh-index>865</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>148</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 190</nh-type>
+                    <nh-index>879</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>153</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 195</nh-type>
+                    <nh-index>910</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>160</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 202</nh-type>
+                    <nh-index>1020</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>161</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 203</nh-type>
+                    <nh-index>1032</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>163</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 205</nh-type>
+                    <nh-index>1070</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>164</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 206</nh-type>
+                    <nh-index>1071</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>166</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 208</nh-type>
+                    <nh-index>872</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>167</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 209</nh-type>
+                    <nh-index>868</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>168</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 210</nh-type>
+                    <nh-index>862</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>169</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 211</nh-type>
+                    <nh-index>870</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>171</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 213</nh-type>
+                    <nh-index>876</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>172</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 214</nh-type>
+                    <nh-index>883</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>173</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 215</nh-type>
+                    <nh-index>896</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>174</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 216</nh-type>
+                    <nh-index>887</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>176</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 218</nh-type>
+                    <nh-index>889</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>177</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 219</nh-type>
+                    <nh-index>1007</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>178</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 220</nh-type>
+                    <nh-index>905</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>179</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 221</nh-type>
+                    <nh-index>908</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>180</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 222</nh-type>
+                    <nh-index>864</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>181</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 223</nh-type>
+                    <nh-index>907</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>182</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 224</nh-type>
+                    <nh-index>878</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>184</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 226</nh-type>
+                    <nh-index>785</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>185</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 227</nh-type>
+                    <nh-index>786</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>186</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 228</nh-type>
+                    <nh-index>880</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>187</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 229</nh-type>
+                    <nh-index>767</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>188</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 230</nh-type>
+                    <nh-index>815</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>199</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 241</nh-type>
+                    <nh-index>844</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>201</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 243</nh-type>
+                    <nh-index>874</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>202</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 244</nh-type>
+                    <nh-index>902</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>203</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 245</nh-type>
+                    <nh-index>909</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>204</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 246</nh-type>
+                    <nh-index>913</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>205</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 247</nh-type>
+                    <nh-index>903</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>206</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 248</nh-type>
+                    <nh-index>843</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>207</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 249</nh-type>
+                    <nh-index>854</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>210</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 252</nh-type>
+                    <nh-index>899</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>211</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 253</nh-type>
+                    <nh-index>984</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>213</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 255</nh-type>
+                    <nh-index>814</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>214</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 256</nh-type>
+                    <nh-index>859</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>222</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 264</nh-type>
+                    <nh-index>857</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>223</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 265</nh-type>
+                    <nh-index>820</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>225</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 267</nh-type>
+                    <nh-index>890</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>227</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 269</nh-type>
+                    <nh-index>892</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>228</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 270</nh-type>
+                    <nh-index>846</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1000080</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 1000081</nh-type>
+                    <nh-index>824</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1001080</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Swap 1001081</nh-type>
+                    <nh-index>826</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>lt-11/1/0.1  (CCC)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>indirect</nh-type>
+                    <nh-index>1048574</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                </nh>
+                <nh>
+                    <to>
+                        0.0.0.17
+                    </to>
+                    <nh-type>Push 17, Push 164(top)</nh-type>
+                    <nh-index>765</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>et-0/0/0.1</via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <logical-system-name>NORDUnet</logical-system-name>
+            <table-name>default.mpls [Index 5] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols>Bridging, Dual VLAN, </enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>579</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>581</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>581</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>581</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>13</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>581</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>17</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>821</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/8.514</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>19</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, rt nh decoupled </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>768</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/8.515</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2582</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1001</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2582(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1002</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2589</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1058</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2589(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1060</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3155</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>974</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3155(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>988</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3230</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46742</nh-type>
+                    <nh-index>804</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3233</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46745</nh-type>
+                    <nh-index>978</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3235</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>993</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3235(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1027</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3236</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46768</nh-type>
+                    <nh-index>928</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3237</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46770</nh-type>
+                    <nh-index>969</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3238</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46778</nh-type>
+                    <nh-index>971</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3239</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 46796</nh-type>
+                    <nh-index>813</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3240</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1045</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3240(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1046</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3242</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1047</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3242(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1076</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3243</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1080</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3243(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1081</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3246</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1006</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3246(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1086</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3248</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>944</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3248(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>956</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3249</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>957</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3249(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>961</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3296</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>808</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3296(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>900</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3320</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1024</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3320(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1025</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3408</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>973</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3408(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>985</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3431</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 48985</nh-type>
+                    <nh-index>994</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3449</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>775</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3449(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>799</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3450</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1013</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3450(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1014</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3456</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1044</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3456(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1048</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3462</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49100</nh-type>
+                    <nh-index>803</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3464</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49102</nh-type>
+                    <nh-index>1010</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3465</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49103</nh-type>
+                    <nh-index>1035</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3466</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49111</nh-type>
+                    <nh-index>927</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3468</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1052</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3468(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1053</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3470</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1073</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3470(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>1075</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3484</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49497</nh-type>
+                    <nh-index>960</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3485</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>983</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3485(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>986</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3486</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49520</nh-type>
+                    <nh-index>778</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3493</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49540</nh-type>
+                    <nh-index>810</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3494</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Swap 49544</nh-type>
+                    <nh-index>930</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3495</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>936</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3495(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>942</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3496</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>965</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>3496(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Pop      </nh-type>
+                    <nh-index>967</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>xe-11/0/8.514  (CCC)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, prefix load balance </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>indirect</nh-type>
+                    <nh-index>1048995</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                </nh>
+                <nh>
+                    <to>
+                        0.0.0.19
+                    </to>
+                    <nh-type>Push 800001, Push 39785(top)</nh-type>
+                    <nh-index>1042</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>lt-11/1/0.10</via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>xe-11/0/8.515  (CCC)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE, prefix load balance </route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>indirect</nh-type>
+                    <nh-index>1049130</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                </nh>
+                <nh>
+                    <to>
+                        0.0.0.18
+                    </to>
+                    <nh-type>Push 800003</nh-type>
+                    <nh-index>795</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-11/0/9.1</via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <logical-system-name>NORDUnet</logical-system-name>
+            <table-name>__mpls-oam__.mpls [Index 8] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols>Bridging, Single VLAN, Dual VLAN, </enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>582</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <table-name>__mpls-oam__.mpls [Index 12] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols>Bridging, Single VLAN, Dual VLAN, </enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-p2mp-index>0</route-p2mp-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>645</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+    </forwarding-table-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

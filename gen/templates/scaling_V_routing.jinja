@@ -1,0 +1,22 @@
+<routes>
+    <routings>
+    {% for i in range(n) %}
+        <routing for="s{{ i }}">
+            <destinations>
+                <destination from="s{{ (n - 1 + i) % n }}" label="10">
+                    <te-groups>
+                        <te-group>
+                            <routes>
+                                <route to="s{{ (i + 1) % n }}">
+                                    <actions>
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    </te-groups>
+                </destination>
+            </destinations>
+        </routing>
+    {% endfor %}
+    </routings>
+</routes>

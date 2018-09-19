@@ -1,0 +1,28 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Hades-re0</system-name>
+            <interface-name>xe-0/0/1.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>21</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                5w1d 01:40:48
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>0:1b:c0:75:6f:17</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Chronos.02</lan-id>
+            <ip-address>0.0.0.112</ip-address>
+            <ipv6-address>ff80::0:17</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

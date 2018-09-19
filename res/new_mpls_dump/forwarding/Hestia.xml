@@ -1,0 +1,155 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <forwarding-table-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-rtinfo">
+        <route-table>
+            <table-name>default.mpls [Index 0] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>50</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>accounting, sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>1</nh-index>
+                    <nh-reference-count>11</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>accounting, sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>3</nh-index>
+                    <nh-reference-count>3</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>accounting, sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>2</nh-index>
+                    <nh-reference-count>6</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2(S=0)</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>accounting, sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>table lookup</nh-type>
+                    <nh-index>3</nh-index>
+                    <nh-reference-count>3</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>13</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>318896</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>accounting, sent to PFE, rt nh decoupled , el capable </route-flags>
+                <nh>
+                    <to>
+                        0.0.0.32
+                    </to>
+                    <nh-type>Swap 364004</nh-type>
+                    <nh-index>798</nh-index>
+                    <nh-reference-count>2</nh-reference-count>
+                    <nh-lb-label>None</nh-lb-label>
+                    <via>xe-0/0/1.0</via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <table-name>__mpls-oam__.mpls [Index 7] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>567</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+    </forwarding-table-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

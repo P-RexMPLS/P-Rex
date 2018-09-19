@@ -1,0 +1,144 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/15.1F6/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/15.1F6/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Ares-re1</system-name>
+            <interface-name>ae3.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>19</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>15</transition-count>
+            <last-transition-time>
+                2w0d 19:18:10
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>38:4f:49:82:a8:1</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Athena-re0.02</lan-id>
+            <ip-address>0.0.0.109</ip-address>
+            <ipv6-address>ff80::0:e</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Ares-re1</system-name>
+            <interface-name>et-0/0/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>21</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>21</transition-count>
+            <last-transition-time>
+                2w0d 19:17:41
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.11</ip-address>
+            <ipv6-address>ff80::0:f</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Aphrodite-re0</system-name>
+            <interface-name>et-1/0/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>19</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>7</transition-count>
+            <last-transition-time>
+                6d 09:00:52
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.12</ip-address>
+            <ipv6-address>ff80::0:10</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Zeus-re1</system-name>
+            <interface-name>et-8/1/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>29</transition-count>
+            <last-transition-time>
+                6d 12:42:22
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>b0:a8:6e:fa:9d:51</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Zeus-re1.03</lan-id>
+            <ip-address>0.0.0.10</ip-address>
+            <ipv6-address>ff80::0:11</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Dionysus-re0</system-name>
+            <interface-name>et-9/1/0.2020</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>25</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>5</transition-count>
+            <last-transition-time>
+                4d 08:35:39
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.15</ip-address>
+            <ipv6-address>ff80::0:12</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Dionysus-re0</system-name>
+            <interface-name>et-9/1/0.2023</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>26</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>5</transition-count>
+            <last-transition-time>
+                1w1d 20:25:53
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.14</ip-address>
+            <ipv6-address>ff80::0:13</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Dionysus-re0</system-name>
+            <interface-name>et-9/1/0.2030</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>25</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>29</transition-count>
+            <last-transition-time>
+                01:39:51
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.110</ip-address>
+            <ipv6-address>ff80::0:14</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

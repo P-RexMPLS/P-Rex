@@ -1,0 +1,129 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/15.1F6/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/15.1F6/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Atlas-re0</system-name>
+            <interface-name>et-1/1/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>21</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                4w6d 14:47:14
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>28:a2:4b:7d:c7:97</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Artemis-re0.02</lan-id>
+            <ip-address>0.0.0.61</ip-address>
+            <ipv6-address>ff80::0:3c</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>lla1-r2-re0-NORDUnet</system-name>
+            <interface-name>et-1/3/0.10</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>18</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>3</transition-count>
+            <last-transition-time>
+                1w1d 22:20:52
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.67</ip-address>
+            <ipv6-address>ff80::0:3d</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Uranus-re0</system-name>
+            <interface-name>et-2/0/2.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>8</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>9</transition-count>
+            <last-transition-time>
+                1w0d 03:18:51
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>c8:e7:f0:5f:c9:94</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Uranus-re0.02</lan-id>
+            <ip-address>0.0.0.66</ip-address>
+            <ipv6-address>ff80::0:3e</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Nyx-re0</system-name>
+            <interface-name>et-2/1/2.2</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>26</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                2w0d 09:58:53
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.122</ip-address>
+            <ipv6-address>ff80::0:3f</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Artemis2</system-name>
+            <interface-name>xe-0/0/2.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>8</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                5w0d 14:38:27
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>80:71:1f:c0:cb:3</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Artemis2.03</lan-id>
+            <ip-address>0.0.0.62</ip-address>
+            <ipv6-address>ff80::0:40</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Hestia</system-name>
+            <interface-name>xe-0/0/3.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>5</transition-count>
+            <last-transition-time>
+                1w6d 18:09:44
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>80:71:1f:c7:8f:0</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Hestia.02</lan-id>
+            <ip-address>0.0.0.65</ip-address>
+            <ipv6-address>ff80::0:41</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

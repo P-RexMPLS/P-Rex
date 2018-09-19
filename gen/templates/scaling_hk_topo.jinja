@@ -1,0 +1,42 @@
+<network>
+    <routers>
+        <router name="s0">
+            <interfaces>
+            {% for j in range(k) %}
+                <interface name="s{{ j * 100 + 1 }}"/>
+            {% endfor %}
+                <interface name="i"/>
+            </interfaces>
+        </router>
+    {% for i in range(1, 61) %}
+        <router name="s{{ i }}">
+            <interfaces>
+            {% for j in range(k) %}
+                <interface name="s{{ j * 100 + i + 1 }}"/>
+                <interface name="s{{ j* 100 + i - 1 }}"/>
+            {% endfor %}
+            </interfaces>
+        </router>
+    {% endfor %}
+        <router name="s61">
+            <interfaces>
+            {% for j in range(k) %}
+                <interface name="s{{ j * 100 + 60 }}"/>
+            {% endfor %}
+                <interface name="u" />
+            </interfaces>
+        </router>
+    </routers>
+    <links>
+    {% for i in range(61) %}
+    {% for j in range(k) %}
+        <link>
+            <sides>
+                <shared_interface interface="s{{ j * 100 + i + 1 }}" router="s{{ i }}"/>
+                <shared_interface interface="s{{ j * 100 + i }}" router="s{{ i + 1 }}"/>
+            </sides>
+        </link>
+    {% endfor %}
+    {% endfor %}
+    </links>
+</network>

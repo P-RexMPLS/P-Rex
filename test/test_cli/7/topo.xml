@@ -1,0 +1,40 @@
+<network>
+  <routers>
+    <router name="s1">
+      <interfaces>
+        <interface name="i1"/>
+
+        <interface name="s2"/>
+        <interface name="discard"/>
+      </interfaces>
+    </router>
+    <router name="s2">
+      <interfaces>
+        <interface name="s1"/>
+        <interface name="s3"/>
+
+        <interface name="discard"/>
+      </interfaces>
+    </router>
+    <router name="s3">
+      <interfaces>
+        <interface name="s2"/>
+        <interface name="i1"/>
+      </interfaces>
+    </router>
+  </routers>
+  <links>
+    <link>
+      <sides>
+        <shared_interface interface="s1" router="s2"/>
+        <shared_interface interface="s2" router="s1"/>
+      </sides>
+    </link>
+    <link>
+      <sides>
+        <shared_interface interface="s2" router="s3"/>
+        <shared_interface interface="s3" router="s2"/>
+      </sides>
+    </link>
+  </links>
+</network>

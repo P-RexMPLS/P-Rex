@@ -1,0 +1,49 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Hades-re0</system-name>
+            <interface-name>xe-5/2/1.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>6</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                10w6d 20:41:41
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>0:1b:c0:75:6f:18</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Hades-re0.02</lan-id>
+            <ip-address>0.0.0.81</ip-address>
+            <ipv6-address>ff80::0:4d</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Zeus-re1</system-name>
+            <interface-name>xe-5/3/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>3</transition-count>
+            <last-transition-time>
+                02:31:24
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>b0:a8:6e:fa:9d:7d</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Zeus-re1.02</lan-id>
+            <ip-address>0.0.0.82</ip-address>
+            <ipv6-address>ff80::0:4e</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

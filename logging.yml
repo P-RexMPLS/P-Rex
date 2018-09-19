@@ -1,0 +1,17 @@
+logging:
+  version: 1
+  disable_existing_loggers: false
+
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      stream: ext://sys.stdout
+    file:
+      class: logging.FileHandler
+      level: DEBUG
+      filename: app.log
+
+  root:
+    level: DEBUG
+    handlers: [console, file]

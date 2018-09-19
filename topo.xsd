@@ -1,0 +1,85 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    >
+    <xs:element name="interface">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="name" use="required"/>
+                    <xs:attribute type="xs:string" name="external" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="interfaces">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="interface" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="switch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="interfaces" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="name" use="required"/>
+        </xs:complexType>
+        <xs:unique name="unique_interfaces">
+            <xs:selector xpath="interfaces/interface"/>
+            <xs:field xpath="@name"/>
+        </xs:unique>
+    </xs:element>
+    <xs:element name="shared_interface">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="switch" use="required"/>
+                    <xs:attribute type="xs:string" name="interface" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sides">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="shared_interface" maxOccurs="2" minOccurs="2"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="link">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sides"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="switches">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="switch" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="unique_switchname">
+            <xs:selector xpath="switch"/>
+            <xs:field xpath="@name"/>
+        </xs:unique>
+    </xs:element>
+    <xs:element name="links">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="link" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="network" vc:minVersion="1.1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="switches"/>
+                <xs:element ref="links"/>
+            </xs:sequence>
+            <!-- Why must you hurt me XML -->
+            <xs:assert id="a" test="every $si in //shared_interface satisfies //switches/switch[@name=$si/@switch]/interfaces/interface[@name=$si/@interface]"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

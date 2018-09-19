@@ -1,0 +1,7 @@
+lxml==4.1.0
+click==6.7
+requests==2.18.4
+more-itertools==4.1.0
+PyYAML==3.12
+networkx==2.1
+matplotlib==2.2.2

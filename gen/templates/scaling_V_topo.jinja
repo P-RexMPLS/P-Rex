@@ -1,0 +1,22 @@
+<network>
+    <routers>
+        {% for i in range(n) %}
+        <router name="s{{ i }}">
+            <interfaces>
+                <interface name="s{{ (n - 1 + i) % n }}"/>
+                <interface name="s{{ (i + 1) % n }}"/>
+            </interfaces>
+        </router>
+        {% endfor %}
+    </routers>
+    <links>
+        {% for i in range(n) %}
+            <link>
+            <sides>
+                <shared_interface interface="s{{ (i + 1) % n }}" router="s{{ i }}"/>
+                <shared_interface interface="s{{ i }}" router="s{{ (i + 1) % n }}"/>
+            </sides>
+            </link>
+        {% endfor %}
+    </links>
+</network>

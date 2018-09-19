@@ -1,0 +1,190 @@
+Package prex;
+
+Helpers
+	any_char = [0x0 .. 0xffff];
+	letter = ['a' .. 'z']
+        | ['A' .. 'Z'];
+	digit = ['0' .. '9'];
+	word_char = letter
+        | digit
+        | '_';
+	tab = 9;
+	cr = 13;
+	lf = 10;
+	whitespace = ' ' | tab | cr | lf;
+	without_whitespace = [any_char - [[' ' + 9] + [10 + 13]]];
+	without_paren = [without_whitespace -
+	    [
+	        [['<' + '>'] + ['(' + ')']] +
+	        [['[' + ']'] + ['{' + '}']]
+	    ]
+	];
+	without_special = [without_paren -
+	    [
+            [['|' + '*'] + ['+' + '^']] +
+            [['.' + '?'] + '\']
+        ]
+	];
+	allowed_chars = without_special;
+	escape_sequence
+	    = '\<' | '\>'
+        | '\{' | '\}'
+        | '\[' | '\]'
+        | '\(' | '\)'
+        | '\|' | '\*'
+        | '\+' | '\^'
+        | '\.' | '\?'
+        | '\\'
+    ;
+	// regex_chars = allowed_chars;
+
+States
+    normal;
+
+Tokens
+	{normal} blank = whitespace+;
+
+	// Symbols
+	{normal} chev_left = '<';
+	{normal} chev_right = '>';
+	{normal} paren_left = '(';
+	{normal} paren_right = ')';
+	{normal} sq_left = '[';
+	{normal} sq_right = ']';
+	{normal} brac_left = '{';
+	{normal} brac_right = '}';
+	{normal} pipe = '|';
+	{normal} star = '*';
+	{normal} plus = '+';
+	{normal} comma = ',';
+	{normal} hat = '^';
+	{normal} dot = '.';
+	{normal} question_mark = '?';
+
+	{normal} word = (allowed_chars | escape_sequence)+;
+	// {regex} regex = regex_chars+;
+
+Ignored Tokens
+	blank;
+
+Productions
+    query {-> query}
+        = [a1]:chev_left [constructing]:re? [a2]:chev_right [network]:re [a3]:chev_left [destructing]:re? [a4]:chev_right
+            {-> New query(constructing.atom, network.atom, destructing.atom)}
+    ;
+
+    re {-> atom}
+        = simple_re+
+            {-> New atom.sequence([simple_re.atom])}
+    ;
+
+    simple_re {-> atom}
+        = {single} basic_re
+            {-> basic_re.atom}
+        | {union} union_re
+            {-> union_re.atom}
+    ;
+
+    union_re {-> atom}
+        = simple_re pipe basic_re
+            {-> New atom.alternative(simple_re.atom, basic_re.atom)}
+    ;
+
+    basic_re {-> atom}
+        = {star} elementary_re star
+            {-> New atom.quantified(elementary_re.atom, New quantifier.zero_or_more())}
+        | {plus} elementary_re plus
+            {-> New atom.quantified(elementary_re.atom, New quantifier.one_or_more())}
+        | {optional} elementary_re question_mark
+            {-> New atom.quantified(elementary_re.atom, New quantifier.zero_or_one())}
+        | {elementary} elementary_re
+            {-> elementary_re.atom}
+    ;
+
+    elementary_re {-> atom}
+        = {group} group
+            {-> group.atom}
+        | {symbol} symbol
+            {-> New atom.simple(symbol.symbol)}
+        | {magic_symbol} magic_symbol
+            {-> magic_symbol.atom}
+        | {set} set
+            {-> set.atom}
+    ;
+
+    group {-> atom}
+        = paren_left re paren_right
+            {-> re.atom}
+    ;
+
+    symbol {-> symbol}
+        = {name} symbol_type
+            {-> New symbol.simple(symbol_type)}
+        | {tuple} chev_left [router]:symbol_type? [c1]:comma [interface]:symbol_type? [c2]:comma [failures]:symbol_type? [c3]:comma [ops]:symbol_type? chev_right
+            {-> New symbol.tuple(router, interface, failures, ops)}
+    ;
+
+    symbol_type {-> symbol_type}
+        = {literal} word
+            {-> New symbol_type.literal(word)}
+        //| {regex} regex
+            //{-> New symbol_type.regex(regex)}
+    ;
+
+    magic_symbol {-> atom}
+        = {dot} dot
+            {-> New atom.any()}
+    ;
+
+    set {-> atom}
+        = {positive_set} positive_set
+            {-> positive_set.atom}
+        | {negative_set} negative_set
+            {-> negative_set.atom}
+    ;
+
+    positive_set {-> atom}
+        = sq_left set_items sq_right
+            {-> New atom.positive_set([set_items.symbol])}
+    ;
+
+    negative_set {-> atom}
+        = sq_left hat set_items sq_right
+            {-> New atom.negative_set([set_items.symbol])}
+    ;
+
+    set_items {-> symbol+}
+        = {single} symbol+
+            {-> [symbol.symbol]}
+    ;
+
+Abstract Syntax Tree
+    query
+        = [constructing]:atom? [network]:atom [destructing]:atom?
+    ;
+
+    symbol
+        = {simple} symbol_type?
+        | {tuple} [router]:symbol_type? [interface]:symbol_type? [failures]:symbol_type? [ops]:symbol_type?
+    ;
+
+    symbol_type
+        = {literal} word
+        //| {regex} regex
+    ;
+
+    atom
+        = {simple} symbol
+        | {sequence} [atoms]:atom+
+        | {any}
+        | {alternative} [left]:atom [right]:atom
+        | {quantified} atom quantifier
+        | {negative_set} [symbols]:symbol+
+        | {positive_set} [symbols]:symbol+
+    ;
+
+    quantifier
+        = {zero_or_more}
+        | {one_or_more}
+        | {zero_or_one}
+    ;

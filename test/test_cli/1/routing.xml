@@ -1,0 +1,407 @@
+<routes>
+  <routings>
+    <routing for="s1">
+      <destinations>
+        <destination from="i1" label="">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="10" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="i2" label="">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="20" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s2">
+      <destinations>
+        <destination from="s1" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s4">
+                  <actions/>
+                </route>
+                <route to="s4">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s3">
+                  <actions>
+                    <action arg="11" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s3">
+                  <actions>
+                    <action arg="11" type="push"/>
+                    <action arg="12" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s3" label="13">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s4" label="62">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s3">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s3">
+      <destinations>
+        <destination from="s2" label="11">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s4">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action arg="12" type="swap"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="12" type="swap"/>
+                    <action arg="13" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s2" label="61">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s4" label="12">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="13" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s4" label="61">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s4">
+      <destinations>
+        <destination from="s2" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s6">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action arg="60" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s3">
+                  <actions>
+                    <action arg="60" type="push"/>
+                    <action arg="61" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="60" type="push"/>
+                    <action arg="61" type="push"/>
+                    <action arg="62" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s3" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s6">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s5">
+                  <actions>
+                    <action arg="60" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s3">
+                  <actions>
+                    <action arg="60" type="push"/>
+                    <action arg="61" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+            <te-group>
+              <routes>
+                <route to="s2">
+                  <actions>
+                    <action arg="60" type="push"/>
+                    <action arg="61" type="push"/>
+                    <action arg="62" type="push"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s5">
+      <destinations>
+        <destination from="s2" label="20">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="i1">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s3" label="12">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s4">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s3" label="60">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s9">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s4" label="60">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s9">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s6">
+      <destinations>
+        <destination from="s4" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s8">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s8" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s8">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s7">
+      <destinations>
+        <destination from="s8" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="i1">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s9" label="60">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s8">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s8">
+      <destinations>
+        <destination from="s6" label="10">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s7">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+        <destination from="s7" label="60">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s6">
+                  <actions>
+                    <action type="pop"/>
+                  </actions>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+    <routing for="s9">
+      <destinations>
+        <destination from="s5" label="60">
+          <te-groups>
+            <te-group>
+              <routes>
+                <route to="s7">
+                  <actions/>
+                </route>
+              </routes>
+            </te-group>
+          </te-groups>
+        </destination>
+      </destinations>
+    </routing>
+  </routings>
+</routes>

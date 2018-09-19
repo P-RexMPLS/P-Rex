@@ -1,0 +1,55 @@
+<routes>
+    <routings>
+        <routing for="s1">
+            <destinations>
+                {% for i in range(n) %}
+                <destination from="i1" label="{{ i }}">
+                    <te-groups>
+                        <te-group>
+                            <routes>
+                                <route to="s2">
+                                    <actions>
+                                        <action type="pop" />
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    </te-groups>
+                </destination>
+                {% endfor %}
+            </destinations>
+        </routing>
+        <routing for="s2">
+            <destinations>
+                <destination from="s1" label="">
+                    <te-groups>
+                        <te-group>
+                            <routes>
+                                <route to="s3">
+                                    <actions>
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    </te-groups>
+                </destination>
+            </destinations>
+        </routing>
+        <routing for="s3">
+            <destinations>
+                <destination from="s2" label="">
+                    <te-groups>
+                        <te-group>
+                            <routes>
+                                <route to="i1">
+                                    <actions>
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    </te-groups>
+                </destination>
+            </destinations>
+        </routing>
+    </routings>
+</routes>

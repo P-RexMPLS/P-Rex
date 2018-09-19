@@ -1,0 +1,118 @@
+<routes>
+    <routings>
+    <!-- Initial -->
+        <routing for="s0">
+            <destinations>
+                <destination from="i" label="">
+                    <te-groups>
+                    {% for j in range(k) %}
+                        <te-group>
+                            <routes>
+                                <route to="s{{ j * 100 + 1 }}">
+                                    <actions>
+                                        <action type="push" arg="0" />
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    {% endfor %}
+                    </te-groups>
+                </destination>
+            </destinations>
+        </routing>
+    <!-- Pushes -->
+    {% for i in range(1, h) %}
+        <routing for="s{{ i }}">
+            <destinations>
+            <!-- Forward -->
+            {% for j in range(k) %}
+                <destination from="s{{ j * 100 +  i - 1 }}" label="{{ i - 1 }}">
+                    <te-groups>
+                    {% for l in range(k) %}
+                        <te-group>
+                            <routes>
+                                <route to="s{{ l * 100 + i + 1 }}">
+                                    <actions>
+                                        <action type="push" arg="{{ i }}" />
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    {% endfor %}
+                    </te-groups>
+                </destination>
+            {% endfor %}
+            </destinations>
+        </routing>
+    {% endfor %}
+    <!-- Noops -->
+    {% for i in range(h, 61 - h) %}
+        <routing for="s{{ i }}">
+            <destinations>
+            <!-- Forward -->
+            {% for j in range(k) %}
+                <destination from="s{{ j * 100 + i - 1 }}" label="{{ h - 1 }}">
+                    <te-groups>
+                    {% for l in range(k) %}
+                        <te-group>
+                            <routes>
+                                <route to="s{{ l * 100 + i + 1 }}">
+                                    <actions>
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    {% endfor %}
+                    </te-groups>
+                </destination>
+            {% endfor %}
+            </destinations>
+        </routing>
+    {% endfor %}
+    <!-- Pops -->
+    {% for i in range(61 - h, 61) %}
+        <routing for="s{{ i }}">
+            <destinations>
+            <!-- Forward -->
+            {% for j in range(k) %}
+                <destination from="s{{ j * 100 +  i - 1 }}" label="{{ 61 - i - 1 }}">
+                    <te-groups>
+                    {% for l in range(k) %}
+                        <te-group>
+                            <routes>
+                                <route to="s{{ l * 100 + i + 1 }}">
+                                    <actions>
+                                        <action type="pop" />
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    {% endfor %}
+                    </te-groups>
+                </destination>
+            {% endfor %}
+            </destinations>
+        </routing>
+    {% endfor %}
+    <!-- Final (impossible to match) -->
+        <routing for="s61">
+            <destinations>
+            {% for j in range(k) %}
+                <destination from="s{{ j * 100 + 60 }}" label="999999">
+                    <te-groups>
+                        <te-group>
+                            <routes>
+                                <route to="u">
+                                    <actions>
+                                        <action type="pop" />
+                                    </actions>
+                                </route>
+                            </routes>
+                        </te-group>
+                    </te-groups>
+                </destination>
+            {% endfor %}
+            </destinations>
+        </routing>
+    </routings>
+</routes>

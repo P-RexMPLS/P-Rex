@@ -1,0 +1,106 @@
+<network>
+    <routers>
+        {% for i in range(1, n * 10 + 1, 10) %}
+        <router name="s{{ i }}">
+            <interfaces>
+                <interface name="s{{ i + 1 }}"/>
+                <interface name="s{{ i + 2 }}"/>
+                <interface name="i1"/>
+            </interfaces>
+        </router>
+        <router name="s{{ i + 1 }}">
+            <interfaces>
+                <interface name="s{{ i }}"/>
+                <interface name="s{{ i + 4 }}"/>
+            </interfaces>
+        </router>
+        <router name="s{{ i + 2 }}">
+            <interfaces>
+                <interface name="s{{ i }}"/>
+                <interface name="s{{ i + 3 }}"/>
+                <interface name="s{{ i + 4 }}"/>
+            </interfaces>
+        </router>
+        <router name="s{{ i + 3 }}">
+            <interfaces>
+                <interface name="s{{ i + 2 }}"/>
+                <interface name="s{{ i + 4 }}"/>
+            </interfaces>
+        </router>
+        <router name="s{{ i + 4 }}">
+            <interfaces>
+                <interface name="s{{ i + 1 }}"/>
+                <interface name="s{{ i + 2 }}"/>
+                <interface name="s{{ i + 3 }}"/>
+                <interface name="o1"/>
+            </interfaces>
+        </router>
+        {% endfor %}
+    </routers>
+    <links>
+        {% for i in range(1, n * 10 + 1, 10) %}
+            <!-- Level: {{ i }} -->
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 1 }}"    router="s{{ i }}"/>
+                    <shared_interface interface="s{{ i }}"        router="s{{ i + 1 }}"/>
+                </sides>
+            </link>
+            {% if i >= (n - 1) * 10 %}
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 2 }}"    router="s{{ i }}"/>
+                    <shared_interface interface="s{{ i }}"        router="s{{ i + 2 }}"/>
+                </sides>
+            </link>
+            {% else %}
+            <!-- start nest -->
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 2 }}"    router="s{{ i }}"/> <!-- reuse old interface -->
+                    <shared_interface interface="i1"            router="s{{ i + 10 }}"/>
+                </sides>
+            </link>
+
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i }}"        router="s{{ i + 2 }}"/> <!-- reuse old interface -->
+                    <shared_interface interface="o1"            router="s{{ i + 14 }}"/>
+                </sides>
+            </link>
+            <!-- end nest -->
+            {% endif %}
+
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 4 }}"    router="s{{ i + 1 }}"/>
+                    <shared_interface interface="s{{ i + 1 }}"    router="s{{ i + 4 }}"/>
+                </sides>
+            </link>
+
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 3 }}"    router="s{{ i + 2 }}"/>
+                    <shared_interface interface="s{{ i + 2 }}"    router="s{{ i + 3 }}"/>
+                </sides>
+            </link>
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 4 }}"    router="s{{ i + 2 }}"/>
+                    <shared_interface interface="s{{ i + 2 }}"    router="s{{ i + 4 }}"/>
+                </sides>
+            </link>
+
+            <link>
+                <sides>
+                    <shared_interface interface="s{{ i + 4 }}"    router="s{{ i + 3 }}"/>
+                    <shared_interface interface="s{{ i + 3 }}"    router="s{{ i + 4 }}"/>
+                </sides>
+            </link>
+
+
+
+        {% endfor %}
+    </links>
+</network>
+

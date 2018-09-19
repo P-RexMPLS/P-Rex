@@ -1,0 +1,149 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <forwarding-table-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-rtinfo">
+        <route-table>
+            <table-name>default.mpls [Index 0] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>50</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>0</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>1</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>2</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+            <rt-entry junos:style="extensive">
+                <rt-destination>13</rt-destination>
+                <destination-type>user</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>receive</nh-type>
+                    <nh-index>49</nh-index>
+                    <nh-reference-count>4</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <logical-system-name>OOB</logical-system-name>
+            <table-name>default.mpls [Index 5] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>566</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <logical-system-name>OOB</logical-system-name>
+            <table-name>__mpls-oam__.mpls [Index 7] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>569</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+        <route-table>
+            <table-name>__mpls-oam__.mpls [Index 9] </table-name>
+            <address-family>MPLS</address-family>
+            <enabled-protocols></enabled-protocols>
+            <rt-entry junos:style="extensive">
+                <rt-destination>default</rt-destination>
+                <destination-type>permanent</destination-type>
+                <route-reference-count>0</route-reference-count>
+                <route-interface-index>0</route-interface-index>
+                <multicast-rpf-nh-index>0</multicast-rpf-nh-index>
+                <route-flags>sent to PFE</route-flags>
+                <nh>
+                    <to></to>
+                    <nh-type>discard</nh-type>
+                    <nh-index>601</nh-index>
+                    <nh-reference-count>1</nh-reference-count>
+                    <via></via>
+                </nh>
+            </rt-entry>
+        </route-table>
+    </forwarding-table-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

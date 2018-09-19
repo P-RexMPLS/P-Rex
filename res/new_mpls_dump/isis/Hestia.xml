@@ -1,0 +1,49 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Artemis-re0</system-name>
+            <interface-name>xe-0/0/0.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>25</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>5</transition-count>
+            <last-transition-time>
+                1w6d 18:09:30
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>28:a2:4b:7e:2e:a3</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Hestia.02</lan-id>
+            <ip-address>0.0.0.116</ip-address>
+            <ipv6-address>ff80::0:24</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Uranus-re0</system-name>
+            <interface-name>xe-0/0/1.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>9</transition-count>
+            <last-transition-time>
+                6d 02:49:36
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>c8:e7:f0:5f:c9:d4</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Uranus-re0.03</lan-id>
+            <ip-address>0.0.0.32</ip-address>
+            <ipv6-address>ff80::0:25</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

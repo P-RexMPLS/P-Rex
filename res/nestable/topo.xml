@@ -1,0 +1,161 @@
+<network>
+	<routers>
+		<router name="s1">
+			<interfaces>
+				<interface name="i1" />
+				<interface name="i2" />
+				<interface name="s2" />
+			</interfaces>
+		</router>
+		<router name="s2">
+			<interfaces>
+				<interface name="s1" />
+				<interface name="s3" />
+				<interface name="s4" />
+				<interface name="s5" />
+				<interface name="f3" />
+				<interface name="f4" />
+			</interfaces>
+		</router>
+		<router name="s3">
+			<interfaces>
+				<interface name="s2" />
+				<interface name="s4" />
+				<interface name="s5" />
+				<interface name="f" />
+			</interfaces>
+		</router>
+		<router name="s4">
+			<interfaces>
+				<interface name="s2" />
+				<interface name="s3" />
+				<interface name="s5" />
+				<interface name="s6" />
+				<interface name="f" />
+			</interfaces>
+		</router>
+		<router name="s5">
+			<interfaces>
+				<interface name="i1" external="yes"/>
+
+				<interface name="s2" />
+				<interface name="s3" />
+				<interface name="s4" />
+				<interface name="s9" />
+			</interfaces>
+		</router>
+		<router name="s6">
+			<interfaces>
+				<interface name="s8" />
+				<interface name="s4" />
+			</interfaces>
+		</router>
+		<router name="s7">
+			<interfaces>
+				<interface name="i1" external="yes"/>
+
+				<interface name="s8" />
+				<interface name="s9" />
+			</interfaces>
+		</router>
+		<router name="s8">
+			<interfaces>
+				<interface name="s6" />
+				<interface name="s7" />
+			</interfaces>
+		</router>
+		<router name="s9">
+			<interfaces>
+				<interface name="s5" />
+				<interface name="s7" />
+			</interfaces>
+		</router>
+	</routers>
+
+	<links>
+		<link>
+			<sides>
+				<shared_interface router="s1" interface="s2" />
+				<shared_interface router="s2" interface="s1" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s2" interface="s3" />
+				<shared_interface router="s3" interface="s2" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s2" interface="s4" />
+				<shared_interface router="s4" interface="s2" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s2" interface="s5" />
+				<shared_interface router="s5" interface="s2" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s2" interface="f3" />
+				<shared_interface router="s3" interface="f" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s2" interface="f4" />
+				<shared_interface router="s4" interface="f" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s3" interface="s4" />
+				<shared_interface router="s4" interface="s3" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s3" interface="s5" />
+				<shared_interface router="s5" interface="s3" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s4" interface="s5" />
+				<shared_interface router="s5" interface="s4" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s4" interface="s6" />
+				<shared_interface router="s6" interface="s4" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s5" interface="s9" />
+				<shared_interface router="s9" interface="s5" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s6" interface="s8" />
+				<shared_interface router="s8" interface="s6" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s7" interface="s8" />
+				<shared_interface router="s8" interface="s7" />
+			</sides>
+		</link>
+		<link>
+			<sides>
+				<shared_interface router="s7" interface="s9" />
+				<shared_interface router="s9" interface="s7" />
+			</sides>
+		</link>
+	</links>
+</network>

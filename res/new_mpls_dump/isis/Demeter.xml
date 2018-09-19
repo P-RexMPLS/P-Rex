@@ -1,0 +1,106 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R7/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/14.2R7/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Zeus-re1</system-name>
+            <interface-name>et-4/1/0.2021</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>20</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                6d 05:21:15
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.31</ip-address>
+            <ipv6-address>ff80::0:1f</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Dionysus-re0</system-name>
+            <interface-name>et-4/1/0.2022</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>24</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                6d 05:20:50
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.29</ip-address>
+            <ipv6-address>ff80::0:20</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Zeus-re1</system-name>
+            <interface-name>et-4/1/0.2031</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>26</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                6d 05:20:49
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.115</ip-address>
+            <ipv6-address>ff80::0:21</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Gaia</system-name>
+            <interface-name>xe-4/0/1.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                1w5d 02:26:35
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>fc:5e:ab:7:87:0</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Gaia.02</lan-id>
+            <ip-address>0.0.0.27</ip-address>
+            <ipv6-address>ff80::0:22</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Hera-re1</system-name>
+            <interface-name>xe-4/2/3.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>7</holdtime>
+            <interface-priority>64</interface-priority>
+            <transition-count>3</transition-count>
+            <last-transition-time>
+                5w1d 00:23:02
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <mac-address>78:fe:3d:d:f2:3e</mac-address>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <lan-id>Hera-re1.03</lan-id>
+            <ip-address>0.0.0.28</ip-address>
+            <ipv6-address>ff80::0:23</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

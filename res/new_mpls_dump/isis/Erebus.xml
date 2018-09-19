@@ -1,0 +1,45 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.2R3/junos">
+    <isis-adjacency-information xmlns="http://xml.juniper.net/junos/14.2R3/junos-routing" junos:style="detail">
+        <isis-adjacency>
+            <system-name>Zeus-re1</system-name>
+            <interface-name>ge-1/0/0.961</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>19</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                4d 11:58:09
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.34</ip-address>
+            <ipv6-address>ff80::0:26</ipv6-address>
+        </isis-adjacency>
+        <isis-adjacency>
+            <system-name>Apollo-re0</system-name>
+            <interface-name>ge-1/1/9.0</interface-name>
+            <level>2</level>
+            <adjacency-state>Up</adjacency-state>
+            <holdtime>21</holdtime>
+            <interface-priority>0</interface-priority>
+            <transition-count>1</transition-count>
+            <last-transition-time>
+                3d 23:24:48
+            </last-transition-time>
+            <circuit-type>2</circuit-type>
+            <adjacency-flag>Speaks: IP, IPv6</adjacency-flag>
+            <adjacency-topologies>Unicast</adjacency-topologies>
+            <adjacency-restart-capable>yes</adjacency-restart-capable>
+            <adjacency-advertisement>advertise</adjacency-advertisement>
+            <ip-address>0.0.0.35</ip-address>
+            <ipv6-address>ff80::0:27</ipv6-address>
+        </isis-adjacency>
+    </isis-adjacency-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>
