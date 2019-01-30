@@ -424,3 +424,125 @@ def compile(expgen, pda, start_label, end_label, emit_comments=True):
 
     return model.System(f, size, pda.final, end_label, mapping,
                         transition_mapping)
+
+# Ingo's fancy code attempt
+
+class TopResolver2(object):
+    def __init__(self, pda):
+        self.pda = pda
+
+    def visit_push(self, action, inlabel=None, **kwargs):
+        return ({action.label}, inlabel)
+
+    def visit_replace(self, action, inlabel=None, **kwargs):
+        return ({action.label}, set())
+
+    def visit_pushreplace(self, action, inlabel=None, **kwargs):
+        return ({action.label1}, {action.label2})
+
+    def visit_pop(self, action, inlabel=None, **kwargs):
+        return (kwargs['stransition'], set())
+
+    def visit_noop(self, action, inlabel=None, **kwargs):
+        return (inlabel, set())
+
+    def visit_transition(self, transition, labels, **kwargs):
+        print("Normal Transition")
+        if transition.inlabel not in labels:
+            return (set(), set())
+        return transition.action.visit(self, inlabel={transition.inlabel}, **kwargs)
+
+    def visit_epsilon_transition(self, transition, labels, **kwargs):
+        print("Epsilon Transition")
+        if labels & transition.in_label_domain == set():
+            return (set(), set())
+        return transition.action.visit(
+            self,
+            inlabel=labels & transition.in_label_domain,
+        )
+
+    def visit_star_transition(self, transition, labels, **kwargs):
+        print("Star Transition")
+        return transition.action.visit(self, labels, **kwargs)
+
+
+def compile2(expgen, pda, start_label, end_label, emit_comments=True):
+    # This is where we calculate the top of stack for every location
+    # @CLEANUP: Hoist this to somewhere more appropriate, I'm thinking in the
+    # general pushdown operations, since it's pretty generic -Jesper 19/06-2018
+    logger.info("Calculating the possible tops of stack")
+    T = {}
+    S = {}
+    Tfront = {
+        pda.initial
+    }
+
+    resolver = TopResolver2(pda)
+    for location in pda.locations:
+        T[location] = set()
+        S[location] = set()
+    T[pda.initial].add(start_label)
+    while Tfront:
+        location = Tfront.pop()
+
+        for transition in location._outgoing:
+            print(f"location: {location}")
+            print(f"transition: {transition}")
+            addedTops, addedTails = transition.visit(resolver, T[location], stransition=S[location])
+            print(addedTops, addedTails)
+            newTops = addedTops - T[transition.to]
+            print(newTops)
+            newTails = (S[location] | addedTails) - S[transition.to] #?
+            if newTops or newTails:
+                print("whoop whoop")
+                Tfront.add(transition.to)
+                T[transition.to].update(newTops)
+                S[transition.to].update(newTails)
+
+    # f = open("pds.pds", "wt")
+    f = io.StringIO()
+
+    # First we mangle!
+    logger.info("Assigning new names")
+    mapping = {}
+    transition_mapping = {}
+    count = 0
+    for transition in pda.transitions:
+        transition_mapping[transition] = str(count)
+        count += 1
+    for symbol in pda.symbols:
+        mapping[symbol] = f"_{count}"
+        count += 1
+    for location in pda.locations:
+        mapping[location] = f"_{count}"
+        count += 1
+
+    # Then we dangle (make it pretty)!
+    if emit_comments:
+        logger.info("Pretty printing")
+        perfect_printer = PerfectPrintVisitor()
+        perfect_printer.specify_list(pda.transitions)
+
+    variables = ",".join(["var_0 (4)"])
+    model.emit_system_start(
+        f,
+        variables,
+        mapping[pda.initial],
+        mapping[pda.final],
+        mapping[start_label],
+        mapping[end_label],
+    )
+    compiler = MopedPrintVisitor(T)
+
+    logger.info("Emitting transitions")
+    size = compiler.specify_list(
+        pda.transitions,
+        f,
+        mapping,
+        transition_mapping,
+    )
+
+    # f.close()
+
+    return model.System(f, size, pda.final, end_label, mapping,
+                        transition_mapping)
