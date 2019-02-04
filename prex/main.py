@@ -330,7 +330,7 @@ def compile(ctx, under, verbose):
 
         logger.info(f"Compiling pushdown with {len(with_destroy.transitions)}"
                     f" symbolic transitions")
-        system = moped.compiler.compile(
+        system = moped.compiler.compile2(
             expgen,
             with_destroy,
             with_destroy.specials["start"],
