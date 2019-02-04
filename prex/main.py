@@ -260,7 +260,7 @@ xml.add_command(random_query)
 @click.pass_context
 @click.option('-v', '--verbose', count=True)
 @click.option('--under/--over', default=False)
-@click.option('--journal', default=False)
+@click.option('--journal/--old', default=False)
 def compile(ctx, under, verbose, journal):
     def inner():
         ctx.obj['under'] = under
