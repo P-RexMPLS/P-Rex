@@ -367,7 +367,17 @@ def compile(expgen, pda, start_label, end_label, emit_comments=True):
     for location in pda.locations:
         T[location] = set()
     T[pda.initial].add(start_label)
+
+    # Some values to print while doing the pruning
+    max_front = 0
+    count = 0
     while Tfront:
+        count += 1
+        max_front = max(len(Tfront), max_front)
+        if count % 1000000 == 0:
+            print(f"Iteration {count}.")
+            print(f"Max front in last batch: {max_front}.")
+            max_front = 0
         location = Tfront.pop()
 
         for transition in location._outgoing:
@@ -479,7 +489,17 @@ def compile2(expgen, pda, start_label, end_label, emit_comments=True):
         T[location] = set()
         S[location] = set()
     T[pda.initial].add(start_label)
+
+    # Some values to print while doing the pruning
+    max_front = 0
+    count = 0
     while Tfront:
+        count += 1
+        max_front = max(len(Tfront), max_front)
+        if count % 1000000 == 0:
+            print(f"Iteration {count}.")
+            print(f"Max front in last batch: {max_front}.")
+            max_front = 0
         location = Tfront.pop()
 
         for transition in location._outgoing:

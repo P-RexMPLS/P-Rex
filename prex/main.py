@@ -260,7 +260,8 @@ xml.add_command(random_query)
 @click.pass_context
 @click.option('-v', '--verbose', count=True)
 @click.option('--under/--over', default=False)
-def compile(ctx, under, verbose):
+@click.option('--journal', default=False)
+def compile(ctx, under, verbose, journal):
     def inner():
         ctx.obj['under'] = under
         t0 = timeit.default_timer()
@@ -330,13 +331,21 @@ def compile(ctx, under, verbose):
 
         logger.info(f"Compiling pushdown with {len(with_destroy.transitions)}"
                     f" symbolic transitions")
-        system = moped.compiler.compile2(
+        system = moped.compiler.compile(
             expgen,
             with_destroy,
             with_destroy.specials["start"],
             with_destroy.specials["end"],
             bool(verbose),
         )
+        if journal:
+           system = moped.compiler.compile2(
+                expgen,
+                with_destroy,
+                with_destroy.specials["start"],
+                with_destroy.specials["end"],
+                bool(verbose),
+            )
 
         ctx.obj['system'] = system
 
