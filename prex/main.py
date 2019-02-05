@@ -331,15 +331,19 @@ def compile(ctx, under, verbose, journal):
 
         logger.info(f"Compiling pushdown with {len(with_destroy.transitions)}"
                     f" symbolic transitions")
-        system = moped.compiler.compile(
-            expgen,
-            with_destroy,
-            with_destroy.specials["start"],
-            with_destroy.specials["end"],
-            bool(verbose),
-        )
+
         if journal:
-           system = moped.compiler.compile2(
+            print("Using journal pruning")
+            system = moped.compiler.compile2(
+                expgen,
+                with_destroy,
+                with_destroy.specials["start"],
+                with_destroy.specials["end"],
+                bool(verbose),
+            )
+        else:
+            print("Using paper pruning")
+            system = moped.compiler.compile(
                 expgen,
                 with_destroy,
                 with_destroy.specials["start"],

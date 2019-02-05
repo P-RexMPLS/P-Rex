@@ -352,7 +352,7 @@ class TopResolver(object):
     def visit_star_transition(self, transition, labels):
         return transition.action.visit(self, labels)
 
-
+iteration_count = 100000
 def compile(expgen, pda, start_label, end_label, emit_comments=True):
     # This is where we calculate the top of stack for every location
     # @CLEANUP: Hoist this to somewhere more appropriate, I'm thinking in the
@@ -374,7 +374,7 @@ def compile(expgen, pda, start_label, end_label, emit_comments=True):
     while Tfront:
         count += 1
         max_front = max(len(Tfront), max_front)
-        if count % 1000000 == 0:
+        if count % iteration_count == 0:
             print(f"Iteration {count}.")
             print(f"Max front in last batch: {max_front}.")
             max_front = 0
@@ -496,7 +496,7 @@ def compile2(expgen, pda, start_label, end_label, emit_comments=True):
     while Tfront:
         count += 1
         max_front = max(len(Tfront), max_front)
-        if count % 1000000 == 0:
+        if count % iteration_count == 0:
             print(f"Iteration {count}.")
             print(f"Max front in last batch: {max_front}.")
             max_front = 0
