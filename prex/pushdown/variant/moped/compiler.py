@@ -387,8 +387,8 @@ def compile(expgen, pda, start_label, end_label, emit_comments=True):
                 Tfront.add(transition.to)
                 T[transition.to].update(newTops)
 
-    for (key, value) in T.items():
-        print(f"(key, value) = ({key},\n\t {value})")
+    # for (key, value) in T.items():
+    #     print(f"(key, value) = ({key},\n\t {value})")
 
     # f = open("pds.pds", "wt")
     f = io.StringIO()
@@ -514,8 +514,8 @@ def compile2(expgen, pda, start_label, end_label, emit_comments=True):
                 T[transition.to].update(newTops)
                 S[transition.to].update(newTails)
 
-    for (key, value) in T.items():
-        print(f"(key, value) = ({key},\n\t {value})")
+    # for (key, value) in T.items():
+    #     print(f"(key, value) = ({key},\n\t {value})")
 
     # f = open("pds.pds", "wt")
     f = io.StringIO()
