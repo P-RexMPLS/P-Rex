@@ -352,7 +352,7 @@ class TopResolver(object):
     def visit_star_transition(self, transition, labels):
         return transition.action.visit(self, labels)
 
-iteration_count = 100000
+iteration_count = 10000
 def compile(expgen, pda, start_label, end_label, emit_comments=True):
     # This is where we calculate the top of stack for every location
     # @CLEANUP: Hoist this to somewhere more appropriate, I'm thinking in the
@@ -386,6 +386,9 @@ def compile(expgen, pda, start_label, end_label, emit_comments=True):
             if newTops:
                 Tfront.add(transition.to)
                 T[transition.to].update(newTops)
+
+    for (key, value) in T.items():
+        print(f"(key, value) = ({key},\n\t {value})")
 
     # f = open("pds.pds", "wt")
     f = io.StringIO()
@@ -510,6 +513,9 @@ def compile2(expgen, pda, start_label, end_label, emit_comments=True):
                 Tfront.add(transition.to)
                 T[transition.to].update(newTops)
                 S[transition.to].update(newTails)
+
+    for (key, value) in T.items():
+        print(f"(key, value) = ({key},\n\t {value})")
 
     # f = open("pds.pds", "wt")
     f = io.StringIO()
