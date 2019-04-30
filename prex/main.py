@@ -262,7 +262,7 @@ xml.add_command(random_query)
 @click.option('--under/--over', default=False)
 @click.option('--journal/--old', default=False)
 @click.option('--alltops/--tosreduction', default=False)
-def compile(ctx, under, verbose, journal):
+def compile(ctx, under, verbose, journal, alltops):
     def inner():
         ctx.obj['under'] = under
         t0 = timeit.default_timer()
@@ -342,7 +342,7 @@ def compile(ctx, under, verbose, journal):
                 with_destroy.specials["end"],
                 bool(verbose),
             )
-        elif notops:
+        elif alltops:
             print("Using no pruning")
             system = moped.compiler.compile0(
                 expgen,
