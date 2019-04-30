@@ -77,6 +77,7 @@ def get_actions(actions_tree):
 def get_routes(routes_tree, destination, router):
     rules = []
     for routedef in routes_tree.findall('route'):
+        print(routes_tree)
         to = router.interfaces[routedef.get("to")]
         actions = get_actions(routedef.find("actions"))
         rule = model.Rule(

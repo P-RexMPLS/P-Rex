@@ -11,6 +11,10 @@ DestructingPDA = nfa_to_pda.DestructingPDA
 
 
 class ConstructingPDA:
+    """Used only in main.py as follows:
+    constructor = optimized_nfa_to_pda.ConstructingPDA(expgen, nfa_c)
+    build_fragment = constructor.convert()
+    """
     def __init__(self, expgen, nfa):
         self.expgen = expgen
         self.pda = pda.PDA()

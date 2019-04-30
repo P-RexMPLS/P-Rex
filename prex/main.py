@@ -261,6 +261,7 @@ xml.add_command(random_query)
 @click.option('-v', '--verbose', count=True)
 @click.option('--under/--over', default=False)
 @click.option('--journal/--old', default=False)
+@click.option('--alltops/--tosreduction', default=False)
 def compile(ctx, under, verbose, journal):
     def inner():
         ctx.obj['under'] = under
@@ -335,6 +336,15 @@ def compile(ctx, under, verbose, journal):
         if journal:
             print("Using journal pruning")
             system = moped.compiler.compile2(
+                expgen,
+                with_destroy,
+                with_destroy.specials["start"],
+                with_destroy.specials["end"],
+                bool(verbose),
+            )
+        elif notops:
+            print("Using no pruning")
+            system = moped.compiler.compile0(
                 expgen,
                 with_destroy,
                 with_destroy.specials["start"],

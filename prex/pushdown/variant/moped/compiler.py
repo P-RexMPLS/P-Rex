@@ -564,3 +564,63 @@ def compile2(expgen, pda, start_label, end_label, emit_comments=True):
 
     return model.System(f, size, pda.final, end_label, mapping,
                         transition_mapping)
+
+def compile0(expgen, pda, start_label, end_label, emit_comments=True):
+    # This is where we calculate the top of stack for every location
+    # @CLEANUP: Hoist this to somewhere more appropriate, I'm thinking in the
+    # general pushdown operations, since it's pretty generic -Jesper 19/06-2018
+    logger.info("Calculating the possible tops of stack")
+    T = {}
+    Tfront = {
+        pda.initial
+    }
+
+    for location in pda.locations:
+        T[location] = pda.symbols
+
+    f = io.StringIO()
+
+    # First we mangle!
+    logger.info("Assigning new names")
+    mapping = {}
+    transition_mapping = {}
+    count = 0
+    for transition in pda.transitions:
+        transition_mapping[transition] = str(count)
+        count += 1
+    for symbol in pda.symbols:
+        mapping[symbol] = f"_{count}"
+        count += 1
+    for location in pda.locations:
+        mapping[location] = f"_{count}"
+        count += 1
+
+    # Then we dangle (make it pretty)!
+    if emit_comments:
+        logger.info("Pretty printing")
+        perfect_printer = PerfectPrintVisitor()
+        perfect_printer.specify_list(pda.transitions)
+
+    variables = ",".join(["var_0 (4)"])
+    model.emit_system_start(
+        f,
+        variables,
+        mapping[pda.initial],
+        mapping[pda.final],
+        mapping[start_label],
+        mapping[end_label],
+    )
+    compiler = MopedPrintVisitor(T)
+
+    logger.info("Emitting transitions")
+    size = compiler.specify_list(
+        pda.transitions,
+        f,
+        mapping,
+        transition_mapping,
+    )
+
+    # f.close()
+
+    return model.System(f, size, pda.final, end_label, mapping,
+                        transition_mapping)
